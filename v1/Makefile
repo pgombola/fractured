@@ -4,7 +4,7 @@ db:
 	--name=roach1 \
 	-p 26257:26257 \
 	-p 8080:8080 \
-	-v "${PWD}/cockroach-data/roach1:/cockroach/cockroach-data" \
+	-v "${PWD/../}/cockroach-data/roach1:/cockroach/cockroach-data" \
 	cockroachdb/cockroach:v1.1.5 \
 	start \
 	--insecure
