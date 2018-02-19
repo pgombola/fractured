@@ -13,3 +13,8 @@ db:
 build:
 	GOOS=linux go build -o app .
 	docker build -t app:v1 .
+	rm app
+
+.PHONY: run
+run: build
+	docker run --rm app:v1
